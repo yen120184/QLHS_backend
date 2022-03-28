@@ -5,5 +5,6 @@ export default interface IUser {
   position: string;
   password: string;
   permission: string;
+  department: string;
   date: Date;
 }

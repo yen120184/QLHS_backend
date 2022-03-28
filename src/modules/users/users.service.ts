@@ -54,9 +54,9 @@ class UserService {
       throw new HttpException(400, `User Id is not exits.`);
     }
     //let avatar = user.avatar;
-    if (user.username === model.username) {
-      throw new HttpException(400, "You must using the difference username");
-    }
+    // if (user.username === model.username) {
+    //   throw new HttpException(400, "You must using the difference username");
+    // }
 
     let updateUserById;
     if (model.password) {

@@ -5,13 +5,15 @@ export default class RegisterDto {
     username: string,
     position: string,
     password: string,
-    permission: string
+    permission: string,
+    department: string
   ) {
     this.user_name = user_name;
     this.username = username;
     this.position = position;
     this.password = password;
     this.permission = permission;
+    this.department = department;
   }
   @IsNotEmpty()
   public user_name: string;
@@ -28,4 +30,7 @@ export default class RegisterDto {
 
   @IsNotEmpty()
   public permission: string;
+
+  @IsNotEmpty()
+  public department: string;
 }
